@@ -1,5 +1,5 @@
 ---
-
+import "../style/style.css";
 ---
 
 <html lang="en">
@@ -12,7 +12,71 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<main></main>
-		<h1>Astro</h1>
+		<div class="hearts">
+			<img src="/public/imgs/hearts.png" alt="hearts">
+		</div>
+		<h1>GIRLTALK</h1>
+		<p>En fortælling om Karlas møde med Girltalks Sisterhood-fællesskab</p>
+		<div class="hearts">
+			<img src="/public/imgs/hearts.png" alt="hearts">
+		</div>
+		<div class="rounded-box">
+			<h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
+			<p>For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.</p>
+			<div class="inner-box">
+				<p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
+			</div>
+		</div>
+		<h1>KARLAS HISTORIE</h1>
+		<p>Mit navn er Karla og jeg bor i en lille kystby tæt på Strib på Fyn, altså dermed sagt bor jeg i et lille samfund. Jeg er 20 år og fyldt med drømme og udfordringer. Trods min travle hverdag føler jeg mig ofte ensom og fortabt.
+			En dag faldt jeg over podcasten kaldet Girl Talk. Senere hen fandt jeg ud af det er en NGO. Et fællesskab for unge kvinder, der tilbyder et trygt frirum til samtaler, kreativitet og aktiviteter. 
+			Nysgerrig og håbefuld besluttede jeg mig for at tage skridtet og deltage i Girltalks møder, der blev afholdt i Odense.</p>
+		
+			<div class="grid_1">
+				
+			</div>
 	</body>
 </html>
+
+<style>
+	.hearts {
+		width: 20%;
+		position: relative;
+  		overflow: hidden;
+		animation: pulse 1.3s infinite alternate; 
+  		opacity: 0.8;
+	}
+
+	@keyframes pulse {
+  0% {
+    transform: scale(1); 
+    opacity: 0.9; 
+  }
+  100% {
+    transform: scale(1.1); 
+    opacity: 6; 
+  }
+}
+
+.rounded-box {
+  width: 900px; 
+  height: 560px; 
+  background-color: #FFF5EB;
+  border-radius: 40px;
+  position: relative;
+}
+
+
+.inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 110px;
+  background-color: #FC4D5C;
+  border-radius: 30px;
+}
+
+
+</style>
