@@ -7,6 +7,18 @@ import Grid from "../komponenter/Grid.astro";
 
 <MainLayout />
 <article>
+  <div class="hearts">
+    <img src="/public/imgs/hearts.png" alt="hearts">
+  </div>
+
+<h1>GIRLTALK</h1>
+<p>En fortælling om Karlas møde med Girltalks Sisterhood-fællesskab.</p>
+
+<div class="hearts">
+  <img src="/public/imgs/hearts.png" alt="hearts">
+</div>
+
+
   <div class="sisterhood">
     <h1>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h1>
     <p>For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.</p>
@@ -16,6 +28,19 @@ import Grid from "../komponenter/Grid.astro";
   <div class="karlas_historie">
     <h2>KARLAS HISTORIE</h2>
     <img src="" alt="" />
+
+
+  
+
+		<div class="rounded-box">
+			<h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
+			<p>For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.</p>
+			<div class="inner-box">
+				<p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD </p>
+			</div>
+		</div>
+
+
     <p>Mit navn er Karla og jeg bor i en lille kystby tæt på Strib på Fyn, altså dermed sagt bor jeg i et lille samfund. Jeg er 20 år og fyldt med drømme og udfordringer. Trods min travle hverdag føler jeg mig ofte ensom og fortabt. En dag faldt jeg over podcasten kaldet Girl Talk. Senere hen fandt jeg ud af det er en NGO. Et fællesskab for unge kvinder, der tilbyder et trygt frirum til samtaler, kreativitet og aktiviteter. Nysgerrig og håbefuld besluttede jeg mig for at tage skridtet og deltage i Girltalks møder, der blev afholdt i Odense.</p>
     <img src="" alt="" />
     <p>Da jeg trådte ind i det rum, hvor Girltalk fællesskabet mødtes, blev jeg mødt af smilende ansigter og varme hjerter. Her sad unge kvinder af alle slags, der delte deres historier, drømme og bekymringer. I dette rum blev jeg hørt, forstået og støttet, som jeg aldrig havde følt før.</p>
@@ -62,4 +87,24 @@ import Grid from "../komponenter/Grid.astro";
 
 <footer></footer>
 
-<style></style>
+<style>
+  .rounded-box {
+  width: 900px; 
+  height: 560px; 
+  background-color: #FFF5EB;
+  border-radius: 40px;
+  position: relative;
+}
+
+
+.inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  height: 110px;
+  background-color: #FC4D5C;
+  border-radius: 30px;
+}
+</style>
