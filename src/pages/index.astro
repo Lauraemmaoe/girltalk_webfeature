@@ -5,42 +5,36 @@ import Grid from "../komponenter/Grid.astro";
 import Video from "../komponenter/Video.astro";
 import Fod from "../komponenter/Fod.astro";
 import TaleBobler from "../komponenter/TaleBobler.astro";
+import Overskift from "../komponenter/Overskift.astro";
 ---
 
 <MainLayout />
+
 <article>
+  <div class="container">
+    <div class="hearts">
+      <img src="/hearts.png" alt="hearts" />
+    </div>
+  </div>
+  <Overskift />
+
   <div class="hearts">
     <img src="/hearts.png" alt="hearts" />
-  </div>
-
-  <h1>GIRLTALK</h1>
-  <p>En fortælling om Karlas møde med Girltalks Sisterhood-fællesskab.</p>
-
-  <div class="hearts">
-    <img src="/hearts.png" alt="hearts" />
-  </div>
-
-  <div class="sisterhood">
-    <h1>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h1>
-    <p>
-      For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.
-    </p>
   </div>
 </article>
 <article>
+  <div class="rounded-box">
+    <h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
+    <p>
+      For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.
+    </p>
+    <div class="inner-box">
+      <p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
+    </div>
+  </div>
   <div class="karlas_historie">
     <h2>KARLAS HISTORIE</h2>
     <img src="" alt="" />
-
-    <div class="rounded-box">
-      <h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
-      <p>
-        For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.
-      </p>
-      <div class="inner-box">
-        <p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
-      </div>
-    </div>
 
     <p>
       Mit navn er Karla og jeg bor i en lille kystby tæt på Strib på Fyn, altså
@@ -101,10 +95,6 @@ import TaleBobler from "../komponenter/TaleBobler.astro";
     ikke kun fællesskab, men også mig selv.
   </p>
 
-  <div class="SoMe">
-    <h1>ALLE HAR BRUG FOR SISTERHOOD</h1>
-  </div>
-
   <div class="facts_grid">
     <h1>HVAD SIGER ANDRE PIGER?</h1>
     <div>
@@ -135,9 +125,15 @@ import TaleBobler from "../komponenter/TaleBobler.astro";
 <footer></footer>
 
 <style>
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .hearts {
     width: 20%;
-    position: relative;
+    padding-top: 100px;
+    padding-right: 200px;
     overflow: hidden;
     animation: pulse 1.3s infinite alternate;
     opacity: 0.8;
@@ -153,6 +149,7 @@ import TaleBobler from "../komponenter/TaleBobler.astro";
       opacity: 6;
     }
   }
+
   .rounded-box {
     width: 900px;
     height: 560px;
