@@ -3,19 +3,20 @@ import MainLayout from "../layout/MainLayout.astro";
 import "../style/style.css";
 import Grid from "../komponenter/Grid.astro";
 import Video from "../komponenter/Video.astro";
+import TaleBobler from "../komponenter/TaleBobler.astro";
 ---
 
 <MainLayout />
 <article>
   <div class="hearts">
-    <img src="/public/imgs/hearts.png" alt="hearts" />
+    <img src="/hearts.png" alt="hearts" />
   </div>
 
   <h1>GIRLTALK</h1>
   <p>En fortælling om Karlas møde med Girltalks Sisterhood-fællesskab.</p>
 
   <div class="hearts">
-    <img src="/public/imgs/hearts.png" alt="hearts" />
+    <img src="/hearts.png" alt="hearts" />
   </div>
 
   <div class="sisterhood">
@@ -77,6 +78,7 @@ import Video from "../komponenter/Video.astro";
     <div></div>
   </div>
 </article>
+<TaleBobler/>
 <Grid />
 <Video />
 
