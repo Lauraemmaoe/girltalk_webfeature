@@ -1,0 +1,57 @@
+---
+
+---
+
+<div class="hearts">
+  <img src="/hearts.png" alt="hearts" />
+</div>
+<div class="chair">
+  <img src="/stol.svg" alt="pil" />
+</div>
+
+<style>
+  .chair {
+    width: 40%;
+
+    padding-left: 350px;
+
+    animation: swingChair 2s ease-in-out infinite alternate; /* Gynger i 2 sekunder frem og tilbage uendeligt */
+    transform-origin: bottom;
+  }
+
+  @keyframes swingChair {
+    0% {
+      transform: rotate(3deg);
+    }
+    100% {
+      transform: rotate(-3deg);
+    }
+  }
+
+  @media (max-width: 800px) {
+    .chair {
+      width: 70%;
+      padding: 100px;
+    }
+  }
+
+  .hearts {
+    width: 20%;
+    padding-top: 100px;
+    padding-left: 200px;
+    overflow: hidden;
+    animation: pulse 1.3s infinite alternate;
+    opacity: 0.8;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 6;
+    }
+  }
+</style>
