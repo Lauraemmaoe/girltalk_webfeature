@@ -6,6 +6,12 @@ import Video from "../komponenter/Video.astro";
 import Fod from "../komponenter/Fod.astro";
 import TaleBobler from "../komponenter/TaleBobler.astro";
 import Overskift from "../komponenter/Overskift.astro";
+import Sound from "../komponenter/Sound.astro";
+import Grid2 from "../komponenter/Grid2.astro";
+import Baggrund from "../komponenter/Baggrund.astro";
+import Baggrund1 from "../komponenter/Baggrund1.astro";
+import Baggrund2 from "../komponenter/Baggrund2.astro";
+import Baggrund3 from "../komponenter/Baggrund3.astro";
 ---
 
 <MainLayout />
@@ -32,95 +38,27 @@ import Overskift from "../komponenter/Overskift.astro";
       <p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
     </div>
   </div>
-  <div class="karlas_historie">
-    <h2>KARLAS HISTORIE</h2>
-    <div class="water">
-      <img src="/water.svg" alt="hearts" />
-    </div>
-    <p>
-      Mit navn er Karla og jeg bor i en lille kystby tæt på Strib på Fyn, altså
-      dermed sagt bor jeg i et lille samfund. Jeg er 20 år og fyldt med drømme
-      og udfordringer. Trods min travle hverdag føler jeg mig ofte ensom og
-      fortabt. En dag faldt jeg over podcasten kaldet Girl Talk. Senere hen
-      fandt jeg ud af det er en NGO. Et fællesskab for unge kvinder, der
-      tilbyder et trygt frirum til samtaler, kreativitet og aktiviteter.
-      Nysgerrig og håbefuld besluttede jeg mig for at tage skridtet og deltage i
-      Girltalks møder, der blev afholdt i Odense.
-    </p>
-    <img src="" alt="" />
-    <p>
-      Da jeg trådte ind i det rum, hvor Girltalk fællesskabet mødtes, blev jeg
-      mødt af smilende ansigter og varme hjerter. Her sad unge kvinder af alle
-      slags, der delte deres historier, drømme og bekymringer. I dette rum blev
-      jeg hørt, forstået og støttet, som jeg aldrig havde følt før.
-    </p>
-    <img src="" alt="" />
-    <p>
-      Gennem samtaler om alt fra præstationspres til veninder og sociale medier
-      fandt jeg en ny styrke i mig selv. Jeg opdagede, at jeg ikke var alene i
-      mine udfordringer, og at fællesskabet var en kraftfuld kilde til
-      empowerment og vækst.
-    </p>
-  </div>
-
-  <div class="facts_grid">
-    <div>
-      <p>
-        Næsten hver femte unge kvinde mellem 16 og 25 år har et dårligt mentalt
-        helbred. De unge kvinder oplever i langt højere grad end de unge mænd at
-        være utilfredse med livet og have svært ved at klare dagligdagen.
-      </p>
-    </div>
-    <div>
-      <img src="" alt="" />
-    </div>
-    <div>
-      <p>
-        25 % af de 16-24-årige kvinder føler sig stressede. 62% af de 16-24
-        årige kvinder oplever, at sociale medier påvirker deres selvbillede.
-      </p>
-    </div>
-    <div>
-      <img src="" alt="" />
-    </div>
-  </div>
-  <div class="karlas_historie"></div>
-  <h2>Fortsættelse på Karlas historie</h2>
-  <p>
-    Gennem disse møder fandt jeg ikke kun veninder, men også redskaber til at
-    tackle livets svære øjeblikke og troen på sig selv. Uge efter uge voksede
-    jeg og vores søsterskab, som de kærligt kaldte det. Vi støttede hinanden
-    gennem tykt og tyndt, og jeg følte mig endelig hjemme i en verden, hvor jeg
-    kunne være mig selv uden forbehold. Girltalk fællesskabet blev ikke bare et
-    sted for mig, det blev en livsændrende oplevelse. Et sted, hvor jeg fandt
-    ikke kun fællesskab, men også mig selv.
-  </p>
-
-  <div class="facts_grid">
-    <h1>HVAD SIGER ANDRE PIGER?</h1>
-    <div>
-      <p>
-        “Jeg oplevede at blive lyttet til. Jeg er enebarn, og mine forældre har
-        travlt med deres arbejde - så det er ofte, at jeg ikke har nogen at
-        spare med, når jeg er hjemme. Derfor betyder dette fællesskab mega meget
-        for mig!” - Signe, 16 år
-      </p>
-    </div>
-    <div></div>
-    <div>
-      <p>
-        “Jeg kan 100% anbefale at deltage til disse møder. Jeg gik igennem et
-        hårdt breakup, og mine veninder var/er alle i et forhold, så følte ikke
-        jeg kan tale med dem om det. Men pigerne fra GirlTalk er vildt søde og
-        det er virkelig et sisterhood man får!” - Gabriella, 20 år
-      </p>
-    </div>
-    <div></div>
-  </div>
 </article>
+<div class="karlas_historie">
+  <h2>KARLAS HISTORIE</h2>
+  <Sound />
+  <div class="water">
+    <img src="/water.svg" alt="hearts" />
+  </div>
+  <Baggrund1 />
+  <img src="" alt="" />
+  <Baggrund2 />
+
+  <Baggrund3 />
+</div>
+
 <TaleBobler />
 <Grid />
+<Baggrund />
+
 <Video />
+<h1>HVAD SIGER ANDRE PIGER?</h1>
+<Grid2 />
 <Fod />
 
 <footer></footer>

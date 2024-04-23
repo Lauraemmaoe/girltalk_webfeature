@@ -1,0 +1,124 @@
+<section>
+  <div class="grid_1">
+    <div class="grid1_11">
+      <h5>
+        “Jeg føler mig ubekvem ved at være i min venindegruppe. De ignorerer mig
+        ofte, og det svært for mig at tale med dem. Derfor tilmeldte jeg mig
+        GirlTalks møder, og det har gjort en verden til forskel for min
+        mentalitet, - Signe, 16 år
+      </h5>
+    </div>
+    <div class="grid1_12">
+      <img src="/whiteheart.svg" alt="pil" />
+    </div>
+
+    <div class="grid1_21">
+      <img src="/whiteheart.svg" alt="pige" />
+    </div>
+
+    <div class="grid1_22">
+      <h5>
+        “Jeg kan 100% anbefale at deltage til disse møder. Jeg gik igennem et
+        hårdt breakup, og mine veninder var/er alle i et forhold, så følte ikke
+        jeg kan tale med dem om det. Men pigerne fra GirlTalk er vildt søde og
+        det er virkelig et sisterhood man får!” - Gabriella, 20 år
+      </h5>
+    </div>
+  </div>
+</section>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    display: grid;
+  }
+  section > img {
+    grid-area: 1/1;
+    align-self: start;
+  }
+  img {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    animation: pulse 0.5s infinite alternate;
+    opacity: 0.8;
+  }
+
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    grid-area: 1/1;
+    padding-bottom: 80px;
+  }
+
+  .grid1_11 {
+    background-color: #fff5eb;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .grid1_12 {
+    background-color: #fc4d5c;
+    align-content: center;
+  }
+
+  .grid1_21 {
+    background-color: #fc4d5c;
+  }
+
+  .grid1_22 {
+    background-color: #fff5eb;
+    text-align: center;
+    padding-top:;
+    padding: 30px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(2);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale(3);
+      opacity: 3;
+    }
+
+    100% {
+      transform: scale(10);
+      opacity: 6;
+    }
+  }
+
+  .grid_1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h5 {
+    color: #1d1d1b;
+    font-size: 30px;
+    font-family: "archivo-variable", sans-serif;
+    font-family: "archivo-narrow-variable", sans-serif;
+    font-variation-settings: "wght" 100;
+  }
+  @media (max-width: 800px) {
+    h5 {
+      color: #1d1d1b;
+      font-size: 14px;
+      font-family: "archivo-variable", sans-serif;
+      font-variation-settings:
+        "wdth" 100,
+        "wght" 100;
+      font-family: "archivo-narrow-variable", sans-serif;
+      font-variation-settings: "wght" 100;
+    }
+  }
+</style>
