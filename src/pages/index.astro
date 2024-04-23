@@ -34,8 +34,9 @@ import Overskift from "../komponenter/Overskift.astro";
   </div>
   <div class="karlas_historie">
     <h2>KARLAS HISTORIE</h2>
-    <img src="" alt="" />
-
+    <div class="water">
+      <img src="/water.svg" alt="hearts" />
+    </div>
     <p>
       Mit navn er Karla og jeg bor i en lille kystby tæt på Strib på Fyn, altså
       dermed sagt bor jeg i et lille samfund. Jeg er 20 år og fyldt med drømme
@@ -125,6 +126,15 @@ import Overskift from "../komponenter/Overskift.astro";
 <footer></footer>
 
 <style>
+  .water {
+    display: flex;
+    justify-content: center;
+  }
+  .water img {
+    width: 50%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .container {
     display: flex;
     justify-content: flex-end;
