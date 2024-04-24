@@ -2,8 +2,11 @@
 
 ---
 
+<div class="container-box">
 <div class="box">
-  <h5>ALLE HAR BRUG FOR ET SISTERHOOD</h5>
+  <div class="overskrift_sisterhood"><h5>ALLE HAR BRUG FOR ET SISTERHOOD</h5></div>
+
+  <div class="video-container2">
   <div class="video-container">
     <video
       class="video"
@@ -11,21 +14,43 @@
       src="https://sophiaserve.dk/kea/09_indhold/Reel.mp4"></video>
   </div>
 </div>
+</div>
+</div>
+
 
 <style>
   .box {
-    margin: 150px;
-    padding: 30px;
-    padding-bottom: 40px;
     background-color: #fff5eb;
-    box-shadow: -93px -95px 0px 6px #d1ecef;
+    box-shadow: -70px -50px 0px 6px #d1ecef;
     border-radius: 4%;
+    width: 70%;
   }
 
+  .overskrift_sisterhood h5 {
+  font-size: 2rem;
+  font-family: "obviously", sans-serif;
+  font-weight: 700;
+  padding: 70px;
+  }
+
+  .video-container {
+    width: 40%;
+  }
+
+  .container-box {
+    display: flex;
+   justify-content: center;
+  }
+
+  .video-container2 {
+   display: flex;
+   justify-content: center;
+  }
+
+
   .video {
-    width: 40%; /* Ændr bredden efter behov */
-    max-width: 800px; /* Sæt en maksimal bredde for at forhindre, at videoen bliver for bred på større skærme */
-    height: auto; /* Lad højden justeres automatisk for at bevare videoens aspektforhold */
+    max-width: 100%; /* Sæt en maksimal bredde for at forhindre, at videoen bliver for bred på større skærme */
+  
   }
 
   h5 {
@@ -34,6 +59,32 @@
     font-family: "obviously", sans-serif;
     text-shadow: -4px -2px 0px #273aaa;
   }
+
+  @media (max-width: 900px) {
+    .video {
+    max-width: 100%; /* Sæt en maksimal bredde for at forhindre, at videoen bliver for bred på større skærme */
+    padding: 10px;
+  }
+  .video-container {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-box {
+    display: flex;
+   justify-content: center;
+  }
+  .overskrift_sisterhood h5 {
+    font-size: 1rem;
+  font-family: "obviously", sans-serif;
+  font-weight: 700;
+  padding: 30px;
+  }
+
+
+      }
 
 
 </style>
