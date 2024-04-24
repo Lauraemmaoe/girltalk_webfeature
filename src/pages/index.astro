@@ -14,11 +14,12 @@ import Baggrund2 from "../komponenter/Baggrund2.astro";
 import Baggrund3 from "../komponenter/Baggrund3.astro";
 import Stol from "../komponenter/Stol.astro";
 import Phone from "../komponenter/Phone.astro";
+import Boks from "../komponenter/Boks.astro";
 ---
 
 <MainLayout />
 
-<article>
+
   <div class="container">
     <div class="hearts">
       <img src="/hearts.png" alt="hearts" />
@@ -29,20 +30,16 @@ import Phone from "../komponenter/Phone.astro";
   <div class="hearts">
     <img src="/hearts.png" alt="hearts" />
   </div>
-</article>
-<article>
-  <div class="rounded-box">
-    <h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
-    <p>
-      For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.
-    </p>
-    <div class="inner-box">
-      <p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
-    </div>
-  </div>
-</article>
+<Boks/>
+
+
+
+
+
+
+
 <div class="karlas_historie">
-  <h2>KARLAS HISTORIE</h2>
+  <div class="karlashistorie_overskrift"><h2>KARLAS HISTORIE</h2></div>
   <Sound />
   <div class="water">
     <img src="/water.svg" alt="hearts" />
@@ -61,11 +58,11 @@ import Phone from "../komponenter/Phone.astro";
 <Baggrund />
 <Phone />
 
-<h1>HVAD SIGER ANDRE PIGER?</h1>
+<div class="karlashistorie_overskrift"><h2>HVAD SIGER ANDRE PIGER?</h2></div>
 <Grid2 />
 <Fod />
 
-<footer></footer>
+
 
 <style>
   .water {
@@ -91,6 +88,13 @@ import Phone from "../komponenter/Phone.astro";
     opacity: 0.8;
   }
 
+  .karlashistorie_overskrift h2 {
+    text-align: center;
+    font-family: "obviously", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -102,22 +106,4 @@ import Phone from "../komponenter/Phone.astro";
     }
   }
 
-  .rounded-box {
-    width: 900px;
-    height: 560px;
-    background-color: #fff5eb;
-    border-radius: 40px;
-    position: relative;
-  }
-
-  .inner-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 340px;
-    height: 110px;
-    background-color: #fc4d5c;
-    border-radius: 30px;
-  }
 </style>

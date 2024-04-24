@@ -20,7 +20,7 @@
     text-align: center;
     transform: skewY(25deg);
     color: #1d1d1b;
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-family: "archivo-variable", sans-serif;
     font-variation-settings:
       "wdth" 100,
@@ -30,7 +30,8 @@
     margin-top: 15px;
   }
 
-  .skewed-heading {
+  
+ .skewed-heading {
     background-color: #d1ecef;
     color: #273aaa;
     font-size: 5rem;
@@ -44,6 +45,34 @@
     text-align: center;
     transform: skewY(
       25deg
-    ); /* Juster denne værdi for at ændre vinklen af den skrå overskrift */
+    ); /* Juster denne værdi for at ændre vinklen af den skrå overskrift */  
+    }
+
+    @media (max-width: 900px) {
+      .skewed-heading {
+    background-color: #d1ecef;
+    color: #273aaa;
+    font-size: 2rem;
+    font-family: "obviously", sans-serif;
+    font-style: normal;
+    color: #fc4d5c;
+    text-shadow: 5px 0px 0px #000000;
+    transform: skewY(
+      25deg
+    ); /* Juster denne værdi for at ændre vinklen af den skrå overskrift */  
+    }
+
+    h6 {
+    transform: skewY(25deg);
+    color: #1d1d1b;
+    font-size: 1rem;
+    font-family: "archivo-variable", sans-serif;
+    font-family: "archivo-narrow-variable", sans-serif;
   }
+ }
+
+
+
+
+  
 </style>
