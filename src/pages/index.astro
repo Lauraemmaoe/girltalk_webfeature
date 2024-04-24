@@ -14,10 +14,12 @@ import Baggrund2 from "../komponenter/Baggrund2.astro";
 import Baggrund3 from "../komponenter/Baggrund3.astro";
 import Stol from "../komponenter/Stol.astro";
 import Phone from "../komponenter/Phone.astro";
+
+import Scroll from "../komponenter/Scroll.astro";
 ---
 
 <MainLayout />
-
+<Scroll />
 <article>
   <div class="container">
     <div class="hearts">
@@ -26,7 +28,7 @@ import Phone from "../komponenter/Phone.astro";
   </div>
   <Overskift />
 
-  <div class="hearts">
+  <div class="hearts2">
     <img src="/hearts.png" alt="hearts" />
   </div>
 </article>
@@ -83,9 +85,19 @@ import Phone from "../komponenter/Phone.astro";
   }
 
   .hearts {
-    width: 20%;
+    width: 30%;
     padding-top: 100px;
     padding-right: 200px;
+    overflow: hidden;
+    animation: pulse 1.3s infinite alternate;
+    opacity: 0.8;
+  }
+
+  .hearts2 {
+    width: 20%;
+    padding-left: 150px;
+    padding-top: 30px;
+
     overflow: hidden;
     animation: pulse 1.3s infinite alternate;
     opacity: 0.8;

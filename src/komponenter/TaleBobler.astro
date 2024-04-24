@@ -2,50 +2,36 @@
 
 ---
 
-
-<section>
-    
-    <div class="talebobler">
-        <img src="/talebobler.svg" alt="talebobler"/></div>
-
-        
-        
-        
-<div class="mørkeprikker">
- <img src="/talebobler_mørke.svg" alt="mørke_bobler"></div>
-
- <div class="lyseprikker">
-<img src="/talebobler_lyse.svg" alt="lyse_bobler"></div>
-
-
-</section>
-
+<div class="grid_10">
+  <div class="lys">
+    <img src="/lysbob1.svg" alt="" />
+  </div>
+  <div class="mørk">
+    <img src="/mørkbob1.svg" alt="" />
+  </div>
+</div>
 
 <style>
-    .talebobler {
-        width: 80%;
-        position: relative;
-        display: grid;
-        place-items: center;
-    
+  .grid_10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lys {
+    animation: bounce 1s infinite alternate ease-in-out;
+  }
+
+  .mørk {
+    animation: bounce 1s infinite alternate ease-in-out;
+    animation-delay: 0.9s; /* Tilføj en forsinkelse på 0.5 sekunder */
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
     }
-
-
-    .lyseprikker {
-        width: 20%;
-        position: absolute;
-        z-index: 1;
-    
-
+    100% {
+      transform: translateY(-30px);
     }
-
-    .mørkeprikker {
-        width: 20%;
-        position: absolute;
-        z-index: 1;
-    }
-
-
-
-
+  }
 </style>

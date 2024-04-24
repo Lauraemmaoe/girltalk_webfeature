@@ -1,0 +1,30 @@
+---
+
+---
+
+<div id="scrolling-line"></div>
+
+<style>
+  #scrolling-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0; /* Starter med ingen bredde */
+    height: 8px; /* Juster højden efter dine præferencer */
+    background-color: #273aaa; /* Juster farven efter dine præferencer */
+    z-index: 9999; /* Sørg for, at det er foran andet indhold */
+    transition: width 0.3s; /* Tilføj en overgang for en glat effekt */
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", function () {
+    var scrollPosition = window.scrollY;
+    var documentHeight = document.documentElement.scrollHeight;
+    var windowHeight = window.innerHeight;
+    var scrollPercentage =
+      (scrollPosition / (documentHeight - windowHeight)) * 100;
+    var lineWidth = scrollPercentage + "%";
+    document.getElementById("scrolling-line").style.width = lineWidth;
+  });
+</script>
