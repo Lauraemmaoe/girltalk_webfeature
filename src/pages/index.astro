@@ -19,6 +19,7 @@ import Boks from "../komponenter/Boks.astro";
 import Scroll from "../komponenter/Scroll.astro";
 ---
 
+<Scroll />
 <MainLayout />
 
 <article>
@@ -33,72 +34,65 @@ import Scroll from "../komponenter/Scroll.astro";
     <img src="/hearts.png" alt="hearts" />
   </div>
 
+  <Boks />
 
-<Boks/>
+  <div class="karlas_historie">
+    <div class="karlashistorie_overskrift"><h2>KARLAS HISTORIE</h2></div>
+    <Sound />
+    <div class="water">
+      <img src="/water.svg" alt="hearts" />
+    </div>
+    <Baggrund1 />
+    <img src="" alt="" />
+    <Baggrund2 />
 
+    <Stol />
 
-
-
-
-<div class="karlas_historie">
-  <div class="karlashistorie_overskrift"><h2>KARLAS HISTORIE</h2></div>
-  <Sound />
-  <div class="water">
-    <img src="/water.svg" alt="hearts" />
+    <Baggrund3 />
   </div>
-  <Baggrund1 />
-  <img src="" alt="" />
-  <Baggrund2 />
 
-  <Stol />
+  <TaleBobler />
+  <Grid />
+  <Baggrund />
+  <Phone />
 
-  <Baggrund3 />
-</div>
+  <div class="karlashistorie_overskrift"><h2>HVAD SIGER ANDRE PIGER?</h2></div>
+  <Grid2 />
+  <Fod />
 
-<TaleBobler />
-<Grid />
-<Baggrund />
-<Phone />
-
-<div class="karlashistorie_overskrift"><h2>HVAD SIGER ANDRE PIGER?</h2></div>
-<Grid2 />
-<Fod />
-
-
-
-<style>
-  .water {
-    display: flex;
-    justify-content: center;
-  }
-  .water img {
-    width: 50%;
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-  .container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .hearts {
-    width: 30%;
-    padding-top: 100px;
-    padding-right: 200px;
-    overflow: hidden;
-    animation: pulse 1.3s infinite alternate;
-    opacity: 0.8;
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      opacity: 0.9;
+  <style>
+    .water {
+      display: flex;
+      justify-content: center;
     }
-    100% {
-      transform: scale(1.1);
-      opacity: 6;
+    .water img {
+      width: 50%;
+      padding-bottom: 50px;
+      padding-top: 50px;
     }
-  }
+    .container {
+      display: flex;
+      justify-content: flex-end;
+    }
 
-</style>
+    .hearts {
+      width: 30%;
+      padding-top: 100px;
+      padding-right: 200px;
+      overflow: hidden;
+      animation: pulse 1.3s infinite alternate;
+      opacity: 0.8;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1.1);
+        opacity: 6;
+      }
+    }
+  </style>
+</article>
