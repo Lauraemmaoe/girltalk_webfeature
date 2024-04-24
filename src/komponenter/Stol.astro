@@ -2,17 +2,29 @@
 
 ---
 
-<div class="hearts">
-  <img src="/hearts.png" alt="hearts" />
+<div class="grid20">
+  <div class="hearts">
+    <img src="/hearts.png" alt="hearts" />
+  </div>
+  <div class="hearts">
+    <img src="/hearts.png" alt="hearts" />
+  </div>
 </div>
 <div class="chair">
   <img src="/stol.svg" alt="pil" />
 </div>
 
 <style>
+  .grid20 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .chair {
     width: 40%;
-
+    padding-left: 450px;
     animation: swingChair 2s ease-in-out infinite alternate; /* Gynger i 2 sekunder frem og tilbage uendeligt */
     transform-origin: bottom;
   }
@@ -31,12 +43,17 @@
       width: 70%;
       padding-left: 40px;
     }
+    .hearts {
+      width: 40%;
+      padding-top: 100px;
+      padding-left: 10px;
+    }
   }
 
   .hearts {
-    width: 20%;
+    width: 40%;
     padding-top: 100px;
-    padding-left: 200px;
+
     overflow: hidden;
     animation: pulse 1.3s infinite alternate;
     opacity: 0.8;
