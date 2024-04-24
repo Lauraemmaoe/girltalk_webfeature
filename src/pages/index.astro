@@ -19,7 +19,7 @@ import Scroll from "../komponenter/Scroll.astro";
 ---
 
 <MainLayout />
-<Scroll />
+
 <article>
   <div class="container">
     <div class="hearts">
@@ -31,20 +31,16 @@ import Scroll from "../komponenter/Scroll.astro";
   <div class="hearts2">
     <img src="/hearts.png" alt="hearts" />
   </div>
-</article>
-<article>
-  <div class="rounded-box">
-    <h2>SISTERHOOD: ET STÆRKT FÆLLESSKAB</h2>
-    <p>
-      For dig, der er mellem 16 og 24 år og bor omkring Odense eller Aalborg.
-    </p>
-    <div class="inner-box">
-      <p>#EMPOWERMENT #FÆLLESSKAB #STØTTE #SELVUDVIKLING #SISTERHOOD</p>
-    </div>
-  </div>
-</article>
+
+
+
+
+
+
+
+
 <div class="karlas_historie">
-  <h2>KARLAS HISTORIE</h2>
+  <div class="karlashistorie_overskrift"><h2>KARLAS HISTORIE</h2></div>
   <Sound />
   <div class="water">
     <img src="/water.svg" alt="hearts" />
@@ -63,11 +59,11 @@ import Scroll from "../komponenter/Scroll.astro";
 <Baggrund />
 <Phone />
 
-<h1>HVAD SIGER ANDRE PIGER?</h1>
+<div class="karlashistorie_overskrift"><h2>HVAD SIGER ANDRE PIGER?</h2></div>
 <Grid2 />
 <Fod />
 
-<footer></footer>
+
 
 <style>
   .water {
@@ -93,16 +89,6 @@ import Scroll from "../komponenter/Scroll.astro";
     opacity: 0.8;
   }
 
-  .hearts2 {
-    width: 20%;
-    padding-left: 150px;
-    padding-top: 30px;
-
-    overflow: hidden;
-    animation: pulse 1.3s infinite alternate;
-    opacity: 0.8;
-  }
-
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -114,22 +100,4 @@ import Scroll from "../komponenter/Scroll.astro";
     }
   }
 
-  .rounded-box {
-    width: 900px;
-    height: 560px;
-    background-color: #fff5eb;
-    border-radius: 40px;
-    position: relative;
-  }
-
-  .inner-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 340px;
-    height: 110px;
-    background-color: #fc4d5c;
-    border-radius: 30px;
-  }
 </style>
